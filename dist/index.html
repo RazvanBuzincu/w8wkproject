@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<script src="bundle.js" defer></script>
+<link rel="stylesheet" href="./static/main.css">
+<title>Character creator</title>
+</head>
+<body>
+    
+    <form id="characterForm" class="rounded shadow m-5 p-5" style="width: 800px;">
+        <h1>Create a Character</h1>
+        <label for="characterName" class="form-label">Character Name: </label><br>
+        <input type="text" class="form-control" id="characterName" name="characterName" required><br>
+    
+        <label for="characterClass" class="form-label">Class:</label><br>
+        <select name="characterClass" id="characterClass" class="mb-3" required>
+            <option value="Rogue">Rogue</option>
+            <option value="Paladin">Paladin</option>
+            <option value="Hunter">Hunter</option>
+            <option value="Mage">Mage</option>
+            <option value="Warrior">Warrior</option>
+        </select><br>
+    
+        <label for="characterWeapon" class="form-label">Weapon:</label><br>
+        <select name="characterWeapon" id="characterWeapon" class="mb-3" required>
+            <option value="Sword">Sword</option>
+            <option value="Bow">Bow</option>
+            <option value="Staff">Staff</option>
+            <option value="Axe">Axe</option>
+            <option value="Dagger">Dagger</option>
+        </select><br>
+
+        <label for="characterArmor" class="form-label">Armor:</label><br>
+        <select name="characterArmor" id="characterArmor" class="mb-3" required>
+            <option value="Leather">Leather</option>
+            <option value="Plate">Plate</option>
+            <option value="Cloth">Cloth</option>
+            <option value="Mail">Mail</option>
+        </select><br>
+
+
+    
+        <button class="btn btn-secondary" type="submit">Create Character</button>
+    </form>
+    
+    <!-- Area to display Characters -->
+    <h1>Character List</h1>
+    <div id="characterList">
+        <ul id="characters"></ul>
+    </div>
+    
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>

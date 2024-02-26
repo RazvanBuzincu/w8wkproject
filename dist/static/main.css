@@ -1,0 +1,16 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    background-color: rebeccapurple;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+form {
+    background-color: burlywood;
+}
